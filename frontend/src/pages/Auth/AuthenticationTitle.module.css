@@ -1,0 +1,123 @@
+/* Background image or gradient */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  z-index: -1;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Title Styling */
+.title {
+  font-family: "Greycliff CF", var(--mantine-font-family);
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px; /* Increased margin to move it further down */
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Form Styling */
+.form {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1.5s ease-in-out;
+  padding: 40px;
+}
+
+/* Input Field Styling */
+.input {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Styling */
+.button {
+  background-color: #0067b8; /* Blue color */
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: #005a99;
+}
+
+/* Anchor Styling for Links */
+a {
+  color: #0067b8;
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: #005a99;
+  }
+}
+
+/* Dimmed Text */
+.text {
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FadeIn animation for text components */
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Lowering the Don't have an account text */
+.fadeInText {
+  margin-top: 20px; /* Added margin to move it lower */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive design: ensure everything is centered on mobile */
+@media (max-width: 768px) {
+  .background {
+    border-radius: 0;
+  }
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+}

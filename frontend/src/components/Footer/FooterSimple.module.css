@@ -1,0 +1,106 @@
+/* Footer container */
+.footer {
+  margin-top: 120px; /* Space from the rest of the content */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f8f9fa; /* Light background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -2px 6px rgba(0, 0, 0, 0.05); /* Top shadow */
+  border-top: 1px solid #e1e4e8; /* Light gray border */
+  position: relative;
+}
+
+/* Inner wrapper to space out items */
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Add some padding for content to breathe */
+  flex-wrap: wrap; /* Make the layout flexible */
+}
+
+/* Logo Section */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+  letter-spacing: 1px;
+  font-family: "Verdana", sans-serif;
+}
+
+/* Links container */
+.links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Styling each anchor link */
+.links a {
+  color: #007bff; /* Blue links */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Link hover effect */
+.links a:hover {
+  color: #0056b3; /* Darker blue */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Footer Bottom Text */
+.footerBottom {
+  margin-top: 40px;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-top: 1px solid #e1e4e8;
+}
+
+.footerText {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Specific styles for the phone icon */
+.footerText.phone span {
+  color: #007bff; /* Apply the same blue as the links */
+}
+
+/* Footer styling for "Created by" text */
+.footerText:first-of-type {
+  font-weight: 600; /* Make "Created by" bold */
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .links {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .footerBottom {
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
